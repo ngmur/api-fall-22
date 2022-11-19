@@ -1,0 +1,16 @@
+utils/RestClient.class
+runner/Runner.class
+rest/films/Serialization_gson.class
+rest/films/NoDeserialization.class
+pojos/Posts.class
+rest/BaseClass.class
+rest/films/JacksonDeSerialization.class
+pojos/User.class
+utils/ConfigReader.class
+utils/RestClientBDD.class
+proj.class
+rest/users/CRUDTest.class
+step_defs/UserSteps.class
+rest/users/Examples.class
+step_defs/PostSteps.class
+pojos/Films.class

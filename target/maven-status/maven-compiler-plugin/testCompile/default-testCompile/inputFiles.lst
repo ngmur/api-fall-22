@@ -1,0 +1,16 @@
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/rest/BaseClass.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/step_defs/PostSteps.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/rest/films/Serialization_gson.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/utils/RestClientBDD.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/utils/ConfigReader.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/runner/Runner.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/pojos/Films.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/rest/films/JacksonDeSerialization.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/proj.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/utils/RestClient.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/rest/films/NoDeserialization.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/pojos/User.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/step_defs/UserSteps.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/pojos/Posts.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/rest/users/Examples.java
+/Users/nurgulyamuratbekova/Desktop/mavenproject/Fall-Api-2022/src/test/java/rest/users/CRUDTest.java
