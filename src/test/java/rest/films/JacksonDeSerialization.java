@@ -9,12 +9,12 @@ import org.junit.jupiter.api.Test;
 import pojos.Films;
 
 public class JacksonDeSerialization {
-    private static final String BASE_URI = "";
+    private static final String BASE_URI = "https://ghibliapi.herokuapp.com/films";
 
     @Test
     void getFilm_JacksonDeserialization() throws JsonProcessingException{
         RestAssured.baseURI  = BASE_URI;
-        String filmId = "";
+        String filmId = "2baf70d1-42bb-4437-b551-e5fed5a87abe";
 
         Response getResponse = RestAssured.given()
                 .when()

@@ -3,14 +3,17 @@ package rest.users;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.restassured.common.mapper.TypeRef;
 import io.restassured.response.Response;
 
 
+import org.junit.jupiter.api.Assumptions;
 import pojos.User;
 import utils.RestClient;
 
 import java.util.Locale;
 
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class Examples extends BaseClass {
@@ -47,27 +50,27 @@ public class Examples extends BaseClass {
         System.out.println(gson.toJson(user));
 
         Response postResponse = restClient.createUser(token, gson.toJson(user));
-      //  Assumptions.assumeTrue(201 == postResponse.getStatusCode());
+        Assumptions.assumeTrue(201 == postResponse.getStatusCode());
 
         System.out.println(postResponse.asString());
 
        // int postUserId = postResponse.jsonPath().getInt("id");
-        User userPost = gson.fromJson(postResponse.asString(), User.class);
+        //User userPost = gson.fromJson(postResponse.asString(), User.class);
 
         Response getResponse = restClient.getUser(token, user.getId());
-       // User postUser = postResponse.as(new TypeRef<User>() {});
-//        System.out.println(postUser.getName());
-//        System.out.println(postUser.getEmail());
-//        System.out.println(postUser.getStatus());
-//        Response getResponse = restClient.getUser(token,postUserId+"");
+        User postUser = postResponse.as(new TypeRef<User>() {});
+        System.out.println(postUser.getName());
+        System.out.println(postUser.getEmail());
+        System.out.println(postUser.getStatus());
+       // Response getResponse = restClient.getUser(token,postUserId+"");
 
-//        assertAll(
-//
-//                () -> assertEquals(200,getResponse.getStatusCode()),
-//                () -> assertTrue(getResponse.asString().contains(user.getName())),
-//                () ->  assertTrue(getResponse.asString().contains(user.getEmail()))
-//
-//        );
+        assertAll(
+
+                () -> assertEquals(200,getResponse.getStatusCode()),
+                () -> assertTrue(getResponse.asString().contains(user.getName())),
+                () ->  assertTrue(getResponse.asString().contains(user.getEmail()))
+
+        );
 
     }
 

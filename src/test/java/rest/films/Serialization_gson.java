@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Serialization_gson {
 
-    private static final String BASE_URI = "https://ghibliapi.herokuapp.com";
+    private static final String BASE_URI = "https://ghibliapi.herokuapp.com/films";
 
     @Test
             public void create_film_serialization(){

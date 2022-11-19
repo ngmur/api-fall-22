@@ -7,7 +7,7 @@ import utils.RestClient;
 
 import java.util.Locale;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CRUDTest extends BaseClass {
 RestClient restClient = new RestClient();
@@ -31,14 +31,14 @@ RestClient restClient = new RestClient();
         Response getResponse = restClient.getUser(token, userPost.getId());
         System.out.println(userPost.getId());
 
-//
-//        assertAll(
-//
-//                () -> assertEquals(200,getResponse.getStatusCode()),
-//                () -> assertTrue(getResponse.asString().contains(user.getName())),
-//                () ->  assertTrue(getResponse.asString().contains(user.getEmail()))
-//
-//        );
+
+        assertAll(
+
+                () -> assertEquals(200,getResponse.getStatusCode()),
+                () -> assertTrue(getResponse.asString().contains(user.getName())),
+                () ->  assertTrue(getResponse.asString().contains(user.getEmail()))
+
+        );
 
     }
 
@@ -58,13 +58,13 @@ RestClient restClient = new RestClient();
        // Assumptions.assumeTrue(201 == postResponse.getStatusCode());
         System.out.println(postResponse.asString());
 
-//        assertAll(
-//
-//                () -> assertEquals(201,postResponse.getStatusCode()),
-//                () -> assertTrue(postResponse.asString().contains(user.getName())),
-//                () ->  assertTrue(postResponse.asString().contains(user.getEmail()))
-//
-//        );
+        assertAll(
+
+                () -> assertEquals(201,postResponse.getStatusCode()),
+                () -> assertTrue(postResponse.asString().contains(user.getName())),
+                () ->  assertTrue(postResponse.asString().contains(user.getEmail()))
+
+        );
 
 
 
