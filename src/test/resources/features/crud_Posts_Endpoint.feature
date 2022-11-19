@@ -12,3 +12,7 @@ Feature: CRUD of/posts endpoint
       |title|body|
       |this is a title|this is a body|
 
+
+
+
+
